@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.p1nero.globalshadersproperties.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "globalshaderpackproperties.refmap.json",
+  "mixins": [
+    "IrisConfigMixin",
+    "ShaderPackMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
