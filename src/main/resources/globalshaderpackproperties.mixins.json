@@ -6,7 +6,8 @@
   "refmap": "globalshaderpackproperties.refmap.json",
   "mixins": [
     "IrisConfigMixin",
-    "ShaderPackMixin"
+    "ShaderPackMixin",
+    "IdMapMixin"
   ],
   "client": [
   ],
