@@ -32,10 +32,11 @@ public abstract class ShaderPackMixin {
                 return null;
             }
         }
+
         try {
             return Files.readString(path.resolve(name), StandardCharsets.ISO_8859_1);
         } catch (NoSuchFileException e) {
-            Iris.logger.debug("An " + path + " " + name + " file was not found in the current shaderpack.Trying to use original path");
+            Iris.logger.debug("An " + path + " " + name + " file was not found in the current shaderpack. Trying to use original path");
             return original.call(shaderPath, name);
         } catch (IOException e) {
             Iris.logger.error("An IOException occurred reading " + path  + " " + name + " from the current shaderpack", e);
